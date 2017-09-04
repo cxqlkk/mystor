@@ -1,27 +1,183 @@
-<!DOCTYPE htmel>
-<title>
-ÍêÃÀµÄÏ¸½Ú
-</title>
-<head></head>
+<!DOCTYPE html>
+<html>
 
-<body>
-<h1>¿´²»¼ûµÄ<a href="#t"Ï¸½Ú</a>:&nbspÏ¸½ÚµÄ¸ºµ£</h1>
-<h3>´´ÐÂ¹«Ë¾Æ¤ÀÕË¹µÄÆäÊµ</h3>
-<a href="http://www.baidu.com">
-<img src="±íÇé1.jpg" alt="Ä¬ÈÏÌáÊ¾" title="Êó±êÐüÍ£ÌáÊ¾" width="200" height="200"/>
-</a><br/>
-<hr/>
+	<head>
+		<meta charset="UTF-8">
+		<title163ç½‘æ˜“é‚®ç®±</title>
+			<style>
+				#head {
+					height: 40px;
+					
+				}
+				
+				#section {
+					background-color: rgb(47, 48, 52);
+					height: 600px;
+					z-index: -1;
+				}
+				
+				#footer {
+					position:absolute;
+					top:660px;
+					left:220px;
+					height :70px;
+					
+				}
+				
+			</style>
+	</head>
 
+	<body>
+		<script type="text/jscript">
+		
+			function f(){
+				
+				var m1=document.getElementById("zhp");
+				var t=m1.style.zIndex;
+				var mo=document.getElementById("ewm");
+				mo.style.zIndex=t+1;
+			}
+			function fm(){
+				
+				var m1=document.getElementById("ewm");
+				var t=m1.style.zIndex;
+				var mo=document.getElementById("zhp");
+				mo.style.zIndex=t+1;
+			}
+		</script>
 
-<p><em>Éè¼ÆÄ£Ê½£¨Design pattern£©</em>´ú±íÁË×î¼ÑµÄÊµ¼ù£¬Í¨³£±»ÓÐ¾­ÑéµÄÃæÏò¶ÔÏóµÄÈí¼þ¿ª·¢ÈËÔ±Ëù²ÉÓÃ¡£Éè¼ÆÄ£Ê½ÊÇÈí¼þ¿ª·¢ÈËÔ±ÔÚÈí¼þ¿ª·¢¹ý³ÌÖÐÃæÁÙµÄÒ»°ãÎÊÌâµÄ½â¾ö·½°¸¡£ÕâÐ©½â¾ö·½°¸ÊÇÖÚ¶àÈí¼þ¿ª·¢ÈËÔ±¾­¹ýÏàµ±³¤µÄÒ»¶ÎÊ±¼äµÄÊÔÑéºÍ´íÎó×Ü½á³öÀ´µÄ¡£</p>
-<p>±¾½Ì³Ì½«Í¨¹ý Java ÊµÀý£¬Ò»²½Ò»²½ÏòÄú½²½âÉè¼ÆÄ£Ê½µÄ¸ÅÄî¡£<p>
+		<div id="head" ">
+			<div style="position: relative;left: 200px;">
+				<a href="http://mail.163.com/html/mail_intro/ "><img src="../img/163logo.gif " /></a>
+				<span style="position: relative;top:-10px">
+					<span>&nbsp;|&nbsp;</span>
+				<a href="http://mail.163.com/html/mail_intro/ " />ä¸­æ–‡é‚®ç®±ç¬¬ä¸€å“ç‰Œ</a>&nbsp;&nbsp;
+				<span style="font-size: x-small; ">
+	 				<a href="http://mail.163.com/html/160513_yellow/">é‚®ç®±é»„é¡µ</a>&nbsp;&nbsp;
+					<a href="https://qiye.163.com/ ">ä¼ä¸šé‚®ç®±</a>&nbsp;&nbsp;
+					<a href="http://vip.163.com/?b08abh1 ">vipé‚®ç®±</a>&nbsp;&nbsp;
+					<a href="http://hw.mail.163.com/#163 ">å›½å¤–ç”¨æˆ·ç™»å½•</a>&nbsp;&nbsp;
+					<a href="http://mail.163.com/dashi/?from=mail13&gotodownload=1 ">æ‰‹æœºç™»é™†</a>&nbsp;&nbsp;
+					<a href="http://mail.163.com/dashi/?from=mail1&gotodownload=1 ">ç”µè„‘ç‰ˆ</a>&nbsp;&nbsp;
+					<a href="http://help.mail.163.com/ ">å¸®åŠ©</a>&nbsp;&nbsp;
+					<a href="http://help.mail.163.com/faqDetail.do?code=d7a5dc8471cd0c0e8b4b8f4f8e49998b374173cfe9171305fa1ce630d7f67ac24ebe7a3165848018 ">å¸¸è§é—®é¢˜</a>
+					<span>&nbsp;|&nbsp;</span>
+					<a href="https://v.mail.163.com/?from=logintop ">ç§äººåŠ©ç†</a>
+					</span>
+				</span>
+				</div>
+		</div>
+		
+		
+		<div id="section">
+		<img src="http://mimg.127.net/index/163/themes/140919_mailapp_cnt.jpg " style="position: absolute;left: 200px;z-index: 0; "/>
+		<div style="position: relative;left: 800px;top: 80px;background: white;width: 280px;height: 450px;z-index: 1;">
+		</div>
+		<div style="position: absolute;left: 803px;top:140px ;width:280px ;height:53px;z-index: 3;">
+			<div onmouseover="f()" style="position:relative;left:4px;top:-11px;width: 138px;height: 53px;border: 0.1px solid gainsboro;box-shadow: 1px 1px 1px ;"><span style="position: relative;left: 37px;top: 13px;">äºŒç»´ç </span></div>
+				
+		<div onmouseover="fm()" style="position:relative;left: 143px;top: -67px; width: 138px;height: 53px;border: 2px solid bisque;"><span style="position: relative;top:11px;left: 14px;;">é‚®ç®±è´¦å·ç™»é™†</span></div>
+			
+		</div>
+			<div id="ewm" style="position: absolute;left: 808px;top: 184px;height: 394px;width:280px ; z-index:3;background-color: white;">
+					<div style="text-align:center;position: relative;">
+						<h3><strong>ç½‘æ˜“é‚®ç®±å¤§å¸ˆ</strong> æ‰‹æœºç‰ˆæ‰«ç ç™»å½•</h3>
+					
+						<p>å®˜æ–¹APPæ›´å®‰å…¨ <a>ç«‹å³ä¸‹è½½</a></p>  
+					</div>
+					<div style="position: relative;left: 70px;">
+						<img src="http://pic0.mofang.com/2014/1125/20141125101851665.jpg" height="140" width="140" />
+					</div>
+					<div style="position: relative;left: 20px;top: 60px;height: 100px;");">
+						<img src="http://mimg.127.net/index/lib/img/applogin_dashi_pc.png" />
+					</div>
+					<div style="text-align: left;position: relative;left: 120px;top: -50px;font-size: small;">
+						<p ><span style="font-size: 15px;">ç½‘æ˜“é‚®ç®±å¤§å¸ˆç”µè„‘ç‰ˆ</span><br/>
+						<span style="font-size: 5px;">ç™»å½•æ›´ä¾¿æ·ï¼Œå·¥ä½œæ›´é«˜æ•ˆ</span><br/>
+						ç«‹å³ä¸‹è½½>></p>
+					</div>
+				</div>
+				
+				
+				<div id="zhp" style="position: absolute;left: 808px;top: 184px;height: 394px;width:280px ; z-index:3;background-color:white ;">
+					<div style="position: relative;top:40px; border: 0.01px solid gainsboro;height: 40px;">
+						<div style="position: relative;top: 10px;left: 20px;">
+							<form method="post" action="">
+						<input style="outline:none;border: 0 none;" type="email" placeholder="è¾“å…¥æ‰‹æœºå·æˆ–è€…é‚®ç®±"/>@163.com
+						</form>
+						</div>
+						<div style="border: 0.01px solid gainsboro;position: relative;top: 40px;height: 40px ;">
+							<div style="position: relative;left: 20px;top: 10px;">
+								<form>
+									<input type="password" placeholder="å¯†ç " style="outline: none;border: none;" />
+								</form>
+							</div>
+						</div>
+						<!--
+                        	ä½œè€…ï¼š641620192@qq.com
+                        	æ—¶é—´ï¼š2017-09-04
+                        	æè¿°ï¼š
+                        -->
+						<div style="position: relative;top: 60px;left: 13px;">
+							<form>
+								<input type="checkbox" name="hh"/><label for="hh"><span style="font-size:10px  ;position: relative;top: -3px;left: 8px;">åå¤©å†…å…ç™»é™†</span></label>
+								<span style="font-size: 10px;position: relative;left: 80px;top: -3px;">å¿˜è®°å¯†ç </span>
+								<span style="position: relative;top: 30px;left: -140px;"><input type="submit" style="background-color: paleturquoise; box-shadow: 0px 2px 2px cornflowerblue;width: 90px;height: 30px;border-radius: 5px 5px 5px 5px;" value="ç™»å½•"/></span>
+							<span style="position: relative;top: 0px;left: 150px;"><input type="button" style="background-color: palevioletred; box-shadow: 0px 0px 0.1px cornflowerblue;width: 90px;height: 30px;border-radius: 5px 5px 5px 5px;" value="åŽ»æ³¨å†Œ"/></span>
+							</form>
+						</div>
+						<div style="position:relative; top:100px;left: 20px;">
+							<label style="font-size: 10px;">ç‰ˆæœ¬:</label>
+							<form style="position: relative;left: 28px;top: -20px;">
+							<select>
+								<option><span style="font-size: 10px;">ç‰ˆæœ¬1</span></option>
+								<option><span style="font-size: 10px;">ç‰ˆæœ¬2</span></option>
+							</select>
+							</form>
+							<span style="font-size: 12px;position:relative;left: 160px;top:-40px">æ­£ä½¿ç”¨sslç™»å½•</span>
+						</div>
+						<div style="position:relative;top: 70px; left: 10px; background: url("https://mimg.127.net/index/lib/img/mailvip_logo_4.png") ;">
+							<img src="https://mimg.127.net/index/lib/img/mailvip_logo_4.png" />
+						</div>
+						<div style="position: relative;top: 60px;">
+							<ul>
+								
+								<span style="font-size:10px ;">
+									<li>
+									ç­¾åˆ°å°±é€è±ªç¤¼ï¼äººäººæœ‰ä»½ï¼
+									</li>
+									<li>ç½‘æ˜“é‚®ç®±æé†’æ‚¨è°¨é˜²é‚®ä»¶è¯ˆéª—ï¼</li>
+									</span>
+							</ul>
+						</div>
+					</div>	
+			
+					
+						</div>
+				
+			
+		</div>
+		</div>
+		
+		
+        <div id="footer">
+        	<div style="position: relative;top: 40px;left: -10px;">
+        		<img src="https://mimg.127.net/logo/netease_logo.gif " />
+        		</div>
+        		<span style="position: relative;top: -30px ;left: 180px;font-size:small;line-height: 50px;">
+        			<a href="http://www.163.com/ ">ç½‘æ˜“é¦–é¡µ</a>&nbsp;&nbsp;
+        			<a href="http://mail.163.com/html/mail_intro/ ">å…³äºŽç½‘æ˜“å…è´¹é‚®</a>&nbsp;&nbsp;
+        			<a href="https://3c.163.com/?from=pdengluyetoutu1 ">ç½‘æ˜“åˆ¶é€ </a>&nbsp;&nbsp;
+        			<a href="http://qian.163.com/ ">ç½‘æ˜“Â·æœ‰é’±</a>&nbsp;&nbsp;
+        			<a href="http://you.163.com/ ">ç½‘æ˜“ä¸¥é€‰</a>&nbsp;&nbsp;
+        			<a href="http://pin.mail.163.com/?utm_source=maillogin&utm_medium=163 ">ç½‘æ˜“ä¸€èµ·æ‹¼</a>
+        			<span>&nbsp;|&nbsp;</span>&nbsp;&nbsp;
+        			ç½‘æ˜“å…¬å¸ç‰ˆæƒæ‰€æœ‰@copy1997-2017
+        	<span style="position: relative;top:26px;left: -670px;">
+        	<a href="https://mimg.127.net/p/icp.jpg ">ICPè¯æµ™B2-201611021</a>
+        	</span>
+        		</span>
+        </div>
+	</body>
 
-<p>ÎÞÂÛÄúÊÇ<strong>ÐÂÊÖ</strong>£¬»¹ÊÇÀÏÊÖ£¬±¾½Ì³Ì¶¼ÖµµÃÒ»¶Á¡£¶ÔÓÚÄÇÐ©¾ßÓÐ·á¸»µÄ¿ª·¢¾­ÑéµÄ¿ª·¢ÈËÔ±£¬Ñ§Ï°Éè¼ÆÄ£Ê½ÓÐÖúÓÚÁË½âÔÚÈí¼þ¿ª·¢¹ý³ÌÖÐËùÃæÁÙµÄÎÊÌâµÄ×î¼Ñ½â¾ö·½°¸£»¶ÔÓÚÄÇÐ©¾­Ñé²»×ãµÄ¿ª·¢ÈËÔ±£¬Ñ§Ï°Éè¼ÆÄ£Ê½ÓÐÖúÓÚÍ¨¹ýÒ»ÖÖ¼òµ¥¿ì½ÝµÄ·½Ê½À´Ñ§Ï°Èí¼þÉè¼Æ¡£<p>
-<p>ÔÄ¶Á±¾½Ì³ÌÇ°£¬ÄúÐèÒªÁË½âµÄÖªÊ¶£º</p>
-<p>ÔÚÄú¿ªÊ¼ÔÄ¶Á±¾½Ì³ÌÖ®Ç°£¬Äú±ØÐë¾ß±¸»ù±¾µÄ Java ±à³ÌµÄ¸ÅÄî¡£Èç¹ûÄú»¹²»ÁË½âÕâÐ©¸ÅÄî£¬ÄÇÃ´½¨ÒéÄúÏÈÔÄ¶ÁÎÒÃÇµÄ Java ½Ì³Ì¡£</p>
-
-
-<hr/>
-<p>&copy;<a name="t>ÖÐ¹ú</a>2018</p>
-</body>
 </html>

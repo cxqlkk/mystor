@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+		a:link{
+			text-decoration: none;
+			color: blue;
+		}
+		a:hover{
+			color: red;
+		}
+		#header{
+			margin: 0px;
+			height: 75px;
+			border: 1px solid rgba(0,0,0,0.1);
+			box-shadow: 1px 1px 1px gainsboro;
+			
+		}
+		body{
+			margin: 0px;
+		}
+		#header div:first-child{
+			position: absolute;
+			top: 20px;
+			left: 100px;
+		}
+		#header span:nth-of-type(1){
+			position: absolute;
+			
+			top: 20px;
+			width: 600px;
+			height: 30px;
+			left: 880px;
+			top: -9px;
+			font-size: 8px;
+			font-weight: lighter;
+			color: rgba(0,0,0,0.5);
+			}
+			#xl{
+				outline: none;border: none;
+			}
+			#wz{
+				position: absolute;left: 1080px ;top: -10px;
+			}
+			#section{
+				height: 500px;
+				background: url(https://imgssl.yhd.com/V01/M01/47/3F/ChEi3VjwyzCAE_i8AACeYUoCpec98400.jpg)no-repeat 170px 80px;
+			}
+			#login{
+				width: 320px;
+				height: 400px;
+				background: white;
+				position: relative;
+				left: 800px;
+				top: 80px;
+				
+			}
+			#sp1{
+				float: left;
+				font-size: 14px;
+			}
+			#sp2{
+				float: right;
+				font-size: small;
+			}
+			#log2{
+				
+				width: 320px;
+				height: 50px;
+				position: relative;
+				left: 800px;
+				top: -290px;
+				border: 0.2px solid gainsboro;
+				
+			}
+			#log3{
+				position: relative;
+				left: 800px;
+				top: -280px;
+				width: 320px;
+				height: 50px;
+				border: 0.2px solid gainsboro;
+			}
+			#log4 div:first-child{
+				position: relative;
+				left: 800px;
+				top:-270px;
+				font-size: 9px;
+				color: rgba(0,0,0,0.4);
+			}
+			#log4 div:last-child{
+				position: relative;
+				left: 1070px;
+				top: -285px;
+				font-size: 9px;
+				color: rgba(0,0,0,0.4);
+			}
+			#log5{
+				position: relative;
+				top: -270px;
+				left: 800px;
+			}
+			#loa{
+				font-size: 12px;
+				position: relative;
+				left: 800px;
+				top: -260px;
+				color: rgba(0,0,0,0.6);
+			}
+			#log6{
+				
+				position: relative;
+				left: 750px;
+				top: -260px;
+				
+				width: 700px;
+				height: 300px;
+				
+				font-size: 10px;
+			color: rgba(0,0,0,0.6);
+				
+				
+			}
+			ul li{
+				list-style: none;
+				float: left;
+			}
+			#hid{
+				position: relative;
+				top: 30px;
+				left: -210px;
+				height: 100px;
+				width: 360px;
+				float: left;
+				display: none;
+			}
+			#hid span{
+				position: relative;
+				top: -8px;
+			}
+			#hh1{
+				font-size: 10px;
+				text-align: center;
+				word-spacing: 0.4em;
+				line-height: 2em;
+			}
+			#hh1{
+				position: relative;
+			top: -50px;
+			font-size: 10px;
+			color:rgba(0,0,0,0.6);
+			}
+		</style>
+		
+	</head>
+	<body>
+		<script type="text/javascript">
+		var x=0;
+			function f(){
+				if(x%2==0){
+					document.getElementById("hid").style.display="block";
+					document.getElementById("hh1").style.top="-20px";
+					x++;
+				}else{
+					document.getElementById("hid").style.display="none";
+					document.getElementById("hh1").style.top="-50px";
+					x++;
+				}
+				
+			}
+		</script>
+		
+		<header>
+			<div id="header">
+				<div> <img src="https://passport.yhd.com/front-passport/passport/images/loginlogo.jpg"</div>
+				<span> 您好，欢迎光临1号店！ <a href="https://passport.yhd.com/passport/login_input.do">请登录</a></span>
+				<div id="wz">
+				<form>
+					<select id="xl" >
+						<option >帮助中心</option>
+						<option>包裹跟踪</option>
+						<option>常见问题</option>
+						<option>在线退换款</option>
+						<option>在线投诉</option>
+						<option>配送范围</option>
+					</select>
+				</form>
+				</div>
+			</div>
+			<form action="" method="post">
+				
+				
+			</form>
+		</header>
+		
+		<section>
+			<div id="section">
+				<div id="login">
+					<span id="sp1">1号店用户登录</span>
+					<a href="#"><span id="sp2">新用户注册</span></a>
+				</div>
+				<!--
+                	作者：641620192@qq.com
+                	时间：2017-09-05
+                	描述：登录框
+                -->
+               		 <form>
+               			 <div id="log2">
+               			 	<img src="img/text.png" style="position: relative;top: 5px;" />
+							<input type="text" value="" style="outline: none;border: none;position: relative;top:-3px; left:30px"placeholder="邮箱/用户名/手机号"/>
+						</div>
+						
+						<div id="log3">
+						<img src="img/mm.png"style="position: relative;top: 8px;" />
+							<input type="password"style="outline: none;border: none;position: relative;top:0px; left: 30px;"placeholder="密码"/>
+						</div>
+						
+						<div id="log4">
+							<div><input type="radio" value="自动登录" name="nn"><label for"nn">七天免登陆</label></div>
+							<div>忘记密码?</div>
+						</div>
+						
+						<div id="log5">
+							<input type="image" src="img/dl.png" />
+						</div>
+					
+				</form>
+				<div id="loa">
+					更多合作网站账号登录 
+				</div>
+				<div id="log6" >
+					<ul >
+						<a href="#"><li><img src="img/pp.png"</li></a>&nbsp;&nbsp;
+						<a href="#"><li><img src="img/hee.png"</li></a>&nbsp;&nbsp;
+						<a href="#"><li><img src="img/wx.jpg"</li></a>&nbsp;&nbsp;
+						<a href="#"><li><img src="img/xl.jpg"</li></a>
+					</ul>
+					<a href="#" id="aa" ><span onclick="f()" style="position: absolute;left: 280px;top: 10px;"> 更多合作网站</span></a>
+					<div id="hid">
+					<ul >
+						<li><img src="img/百度.jpg"/><span>百&nbsp;&nbsp;度&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+						<img src="img/中国移动.jpg"/><span>中国移动&nbsp;&nbsp;&nbsp;</span>
+						<img src="img/人人网.jpg"><span>人人网&nbsp;&nbsp;&nbsp;</span>
+						<img src="img/平安万里通.jpg"/><span>平安万里通</span></li>
+						<li><img src="img/蘑菇街.jpg"/><span>蘑菇街&nbsp;&nbsp;&nbsp;&nbsp;</span>
+						<img src="img/开心网.jpg"/><span>开&nbsp;心&nbsp;网&nbsp;&nbsp;&nbsp;</span>
+						<img src="img/支付宝.jpg"/><span>支付宝&nbsp;&nbsp;&nbsp;</span>
+						<img src="img/网易.jpg"/><span>网&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;易</span></li>
+					</ul>
+					</div>
+				</div>
+				
+				
+				
+			</div>
+		</section>
+		
+		
+		
+		<footer>
+			<div id="hh1">
+			<p>沪ICP备16050468号&nbsp;|&nbsp;沪B2-20170039&nbsp;|&nbsp;营业执照<br/>
+Copyright © 1号店网上超市 2007-2017，All Rights Reserved</p>
+</div>
+		</footer>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>

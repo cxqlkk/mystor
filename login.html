@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+		body{
+			
+			margin: 0px;
+		}
+		a{
+			text-decoration: none;
+		}
+			#header{
+				height: 75px;
+				
+			}
+			#header div:first-child{
+				background: white url(https://passport.yhd.com/front-passport/passport/images/loginlogo.jpg) no-repeat 60px 15px;
+				width: 49%;
+				
+				height: 75px;
+				float: left;
+			}
+			#header div:last-child{
+				
+				float: right;
+				width: 49%;
+				height: 75px;
+			
+			}
+			#header span{
+				position: absolute;
+				left: 1000px;
+				top: 25px;
+				color: rgba(0,0,0,0.4);
+				font-size: 10px;
+			}
+			#help{
+				position: absolute;
+				left: 1170px;
+				top: 22px;
+				z-index: 3;
+			}
+			#mm li{
+				list-style: none;
+				border: 0.02px solid rgba(0,0,0,0.1);
+				font-size: 10px;
+				width: 66px;
+				z-index: 1;
+				position: relative;
+				left: 120px;
+				top: 7px;
+				height: 20px;
+				
+			}
+			#hi{
+				display: none;
+			}
+			#section{
+				margin: 0px;
+				width: 88%;
+				
+				height: 600px;
+				position: absolute;
+				left: 6%;
+			}
+			ul li{
+				list-style: none;
+				width: 320px;
+				height: 50px;
+				border: 1px solid rgba(0,0,0,0.4);
+			}
+			h1{
+				text-align: center;
+				position: relative;
+				top: 40px;
+			}
+			#fom{
+				position: absolute;
+				top: 130px;
+				left: 400px;
+				font-size: 12px;
+			}
+			ul li:first-of-type{
+				position: relative;
+				top: -40px;
+			}
+			ul li:nth-of-type(2){
+				position: relative;
+				top: -20px;
+			}
+			ul li:nth-of-type(3){
+				width:170px ;
+			}
+			ul li:nth-of-type(4){
+				position: relative;
+				top: 26px;
+			}
+			ul li:nth-of-type(5){
+				position: relative;
+				top: 50px;
+			}
+			li input{
+				position: relative;
+				top: 16px;
+			}
+			li span{
+				z-index: 3;
+				position: relative;
+				top: 12px;
+				left: -150px;
+			}
+		#com li:nth-of-type(3) span{
+				position: relative;
+				left: 18px;
+				top: -5px;
+			}
+			#foot{
+				font-size: 10px;
+				color: rgba(0,0,0,0.5);
+				position: absolute;
+				left: 530px;
+				top: 630px;
+				line-height: 2em;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function ft(){
+				document.getElementById("hi").style.display="block";
+				
+			}
+			function f1(){
+				document.getElementById("hi").style.display="none";
+			}
+		function yz(id){
+				id.lastElementChild.style.left="-250px";
+				
+			}
+		
+		</script>
+		<!--
+        	作者：641620192@qq.com
+        	时间：2017-09-07
+        	描述：
+        -->
+       <header>
+       	<div id="header">
+       		<div>
+       		</div>
+       		
+       		<div>
+       			<span>您好!欢迎光临1号店 <a href="login.html">&nbsp;&nbsp;请登录</a></span>
+       			<div id="help" >
+       				<a href="#" onmouseover="ft()" onmouseleave="f1()"><img src="img/help.png" /></a>
+       			</div>
+       			<div id="hi">
+       				<ul id="mm">
+       					<li>&nbsp;</li>
+       					<li>包裹跟踪</li>
+       					<li>打我电话</li>
+       					<li>一个东东</li>
+       					<li>两个东东</li>
+       				</ul>
+       			</div>
+       		</div>
+       		
+       		
+       	</div>
+       	</header>
+		
+		<section>
+			<div id="section">
+				<div>
+					
+					<div>
+						<h1>一号店注册</h1>
+						<form>
+							<div id="fom">
+								<ul id="com">
+									<li onclick="yz(this)"><input  type="text" pattern="\w{4,20}" style="outline: none;border: none;" /><span id="s1" >用户名</span></li>
+									<li onclick="yz(this)"><input type="password" pattern="^1[389]\d{9}"  style="outline: none;border: none;"/><span id="s2">手机号</span> </li>
+									<li onclick="yz(this)"><input type="text" style="outline: none; border: none;"/><img style="position: absolute;left: 220px;top: 115px;" src="img/获取验证码.png"/><span id="s3">短信验证码</span></li>
+									<li onclick="yz(this)"><input type="text"  pattern="\w{4,6}" style="outline: none;border: none;"/><span id="s4">设置密码</span></li>
+									<li onclick="yz(this)"><input type="text" pattern="\w{4,6}" style="outline: none;border: none;"/><span id="s5">确认密码</span></li>
+									
+								</ul>	
+							</div>
+							<p style="font-size: 12px;color: rgba(0,0,0,0.6); position: absolute;left: 450px;top: 450px;">点击注册，表示您同意1号店 <a href="#">《服务协议》</a></p>
+							<input type="image" src="img/dl.png"  style="position: relative;left: 440px;top:420px"/>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<footer>
+			<div id="foot">
+				<p>沪ICP备16050468号&nbsp;&nbsp;|&nbsp;&nbsp;沪B2-20170039&nbsp;&nbsp;|&nbsp;&nbsp;<br/>
+Copyright © 1号店网上超市 2007-2017，All Rights Reserved</p>
+			</div>
+		</footer>
+		
+		
+	</body>
+</html>
